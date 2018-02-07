@@ -1,4 +1,4 @@
-class ArrayList<T> {
+export class ArrayList<T> {
 
     container: T[] = []
 
@@ -22,5 +22,3 @@ class ArrayList<T> {
         return this.container.length
     }
 }
-
-export default ArrayList

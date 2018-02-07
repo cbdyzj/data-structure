@@ -1,4 +1,4 @@
-class Queue<T> {
+export class Stack<T> {
 
     container: T[] = []
 
@@ -18,5 +18,3 @@ class Queue<T> {
         return this.container.length
     }
 }
-
-export default Queue
