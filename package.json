@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/cbdyzj/data-structure/issues"
   },
-  "homepage": "https://github.com/cbdyzj/data-structure#readme"
+  "homepage": "https://github.com/cbdyzj/data-structure#readme",
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
 }
