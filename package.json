@@ -1,0 +1,20 @@
+{
+  "name": "data-structure",
+  "version": "1.0.0",
+  "description": "Data structures in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbdyzj/data-structure.git"
+  },
+  "keywords": [],
+  "author": "cbdyzj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbdyzj/data-structure/issues"
+  },
+  "homepage": "https://github.com/cbdyzj/data-structure#readme"
+}
