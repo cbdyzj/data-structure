@@ -1,4 +1,4 @@
-class DSQueue<T> {
+class Queue<T> {
 
     container: T[] = []
 
@@ -19,4 +19,4 @@ class DSQueue<T> {
     }
 }
 
-export default DSQueue
+export default Queue

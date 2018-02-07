@@ -1,4 +1,4 @@
-class DSArray<T> {
+class ArrayList<T> {
 
     container: T[] = []
 
@@ -23,4 +23,4 @@ class DSArray<T> {
     }
 }
 
-export default DSArray
+export default ArrayList
