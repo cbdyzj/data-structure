@@ -6,6 +6,7 @@ export interface TreeNode<T> {
 
 export type Operate<T> = (data: T) => void
 
+// 遍历二叉树
 export const Traversals = {
 
     preOrder<T>(node: TreeNode<T>, fn: Operate<T>) {
