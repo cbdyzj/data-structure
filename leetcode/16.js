@@ -19,6 +19,6 @@ var threeSumClosest = function (nums, target) {
         }
     }
     return closest
-};
+}
 
 // 应该用双指针（O(n^2)），但是三重循环（O(n^3)）也AC了😳

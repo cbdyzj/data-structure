@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var swapPairs = function (head) {
+const swapPairs = function (head) {
     if (!head) {
         return null
     }
@@ -23,11 +23,11 @@ var swapPairs = function (head) {
     head.next = p
     p.next = swapPairs(p.next)
     return head
-};
+}
 
 // 递归
 
-var swapPairs = function (head) {
+const swapPairs2 = function (head) {
     if (!head) {
         return null
     }
@@ -49,6 +49,6 @@ var swapPairs = function (head) {
         q = p.next
     }
     return head
-};
+}
 
 // 循环

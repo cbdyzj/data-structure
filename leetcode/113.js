@@ -33,11 +33,6 @@ function childSum(node, acc, sum) {
     return [...leftRes, ...rightRes]
 }
 
-/**
- * @param {TreeNode} root
- * @param {number} sum
- * @return {number[][]}
- */
 var pathSum = function (root, sum) {
     return childSum(root, 0, sum)
         .filter(item => item[0])

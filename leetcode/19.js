@@ -10,7 +10,7 @@
  * @param {number} n
  * @return {ListNode}
  */
-var removeNthFromEnd = function (head, n) {
+const removeNthFromEnd = function (head, n) {
     let p = head
     let target = head
     for (var i = 0; i < n; i++) {
@@ -26,4 +26,4 @@ var removeNthFromEnd = function (head, n) {
     }
     target.next = target.next.next
     return head
-};
+}

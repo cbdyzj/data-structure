@@ -1,8 +1,4 @@
-/**
- * @param {number[]} candidates
- * @param {number} target
- * @return {number[][]}
- */
+
 function isSameArray(a, b) {
     if (a.length !== b.length) {
         return false

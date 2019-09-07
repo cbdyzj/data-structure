@@ -26,4 +26,4 @@ var letterCombinations = function (digits) {
         }
     }
     return resultSet
-};
+}

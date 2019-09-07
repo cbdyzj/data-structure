@@ -26,4 +26,4 @@ var mergeTwoLists = function (l1, l2) {
     let p = l1 || l2
     l3p.next = p
     return l3.next
-};
+}

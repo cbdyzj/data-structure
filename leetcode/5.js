@@ -1,7 +1,3 @@
-/**
- * @param {string} s
- * @return {string}
- */
 function isPalindrome(s, i, j) {
     while (i < j) {
         if (s[i] !== s[j]) {
@@ -25,8 +21,8 @@ var longestPalindrome = function (s) {
     for (var i = 0; i < s.length * 2 - 1; i++) {
         if (i % 2 === 0) {
             // odd
-            var tm = min(i / 2, s.length - i / 2 - 1)
-            for (var k = tm; k >= 0; k--) {
+            let tm = min(i / 2, s.length - i / 2 - 1)
+            for (let k = tm; k >= 0; k--) {
                 if (isPalindrome(s, i / 2 - k, i / 2 + k)) {
                     if (k * 2 + 1 > lp.length) {
                         lp = s.substring(i / 2 - k, i / 2 + k + 1)
@@ -36,8 +32,8 @@ var longestPalindrome = function (s) {
             }
         } else {
             // even
-            var tm = min((i + 1) / 2, s.length - (i + 1) / 2)
-            for (var k = tm; k >= 0; k--) {
+            let tm = min((i + 1) / 2, s.length - (i + 1) / 2)
+            for (let k = tm; k >= 0; k--) {
                 if (isPalindrome(s, (i - 1) / 2 - k, (i + 1) / 2 + k)) {
                     if ((k + 1) * 2 > lp.length) {
                         lp = s.substring((i - 1) / 2 - k, (i + 1) / 2 + k + 1)

@@ -16,15 +16,23 @@ var fourSum = function (nums, target) {
                         const sum = nums[i] + nums[j] + nums[left] + nums[right]
                         if (sum === target) {
                             resultSet.push([nums[i], nums[j], nums[left], nums[right]])
-                            while (left < right && nums[right] === nums[right - 1]) { right-- }
-                            while (left < right && nums[left] === nums[left + 1]) { left++ }
+                            while (left < right && nums[right] === nums[right - 1]) {
+                                right--
+                            }
+                            while (left < right && nums[left] === nums[left + 1]) {
+                                left++
+                            }
                             right--
                             left++
                         } else if (sum > target) {
-                            while (left < right && nums[right] === nums[right - 1]) { right-- }
+                            while (left < right && nums[right] === nums[right - 1]) {
+                                right--
+                            }
                             right--
                         } else {
-                            while (left < right && nums[left] === nums[left + 1]) { left++ }
+                            while (left < right && nums[left] === nums[left + 1]) {
+                                left++
+                            }
                             left++
                         }
                     }
@@ -33,6 +41,6 @@ var fourSum = function (nums, target) {
         }
     }
     return resultSet
-};
+}
 
 // 固定两个数，剩下两个数用双指针，（O(n^3)）

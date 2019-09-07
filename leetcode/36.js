@@ -1,7 +1,3 @@
-/**
- * @param {character[][]} board
- * @return {boolean}
- */
 function isValidLine(part) {
     const mark = {}
     for (const el of part) {

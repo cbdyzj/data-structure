@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
+
 function reverse(arr, i, j) {
     while (i < j) {
         const tmp = arr[i]
@@ -12,7 +9,7 @@ function reverse(arr, i, j) {
     }
 }
 
-var nextPermutation = function (nums) {
+const nextPermutation = function (nums) {
     for (let i = nums.length - 2; i >= 0; i--) {
         if (nums[i] < nums[i + 1]) {
             let target = i + 1
@@ -30,7 +27,7 @@ var nextPermutation = function (nums) {
     }
     reverse(nums, 0, nums.length - 1)
     return nums
-};
+}
 
 // 全排列字典序列法
 // 1. 从右向左找到第一个第一个非递增的数nums[i]（如果没有找到则说明是最大排列）

@@ -3,7 +3,7 @@
  * @param {string} needle
  * @return {number}
  */
-var strStr = function (haystack, needle) {
+const strStr = function (haystack, needle) {
     if (needle === '') {
         return 0
     }
@@ -17,6 +17,6 @@ var strStr = function (haystack, needle) {
         }
     }
     return -1
-};
+}
 
 // 还可以用KMP

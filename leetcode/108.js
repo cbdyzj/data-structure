@@ -5,10 +5,6 @@
  *     this.left = this.right = null;
  * }
  */
-/**
- * @param {number[]} nums
- * @return {TreeNode}
- */
 var sortedArrayToBST = function (nums, start = 0, end = nums.length - 1) {
     if (start > end) {
         return null

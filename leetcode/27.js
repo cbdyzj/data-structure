@@ -3,12 +3,12 @@
  * @param {number} val
  * @return {number}
  */
-var removeElement = function (nums, val) {
+const removeElement = function (nums, val) {
     let count = 0
     for (let i = 0; i < nums.length - count; i++) {
         let p = 0
         while (i + p < nums.length - count
-            && nums[i + p] === val) {
+        && nums[i + p] === val) {
             p++
         }
         if (p) {
@@ -19,5 +19,5 @@ var removeElement = function (nums, val) {
         }
     }
     return nums.length - count
-};
+}
 

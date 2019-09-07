@@ -3,7 +3,7 @@
  * @param {number} divisor
  * @return {number}
  */
-var divide = function (dividend, divisor) {
+const divide = function (dividend, divisor) {
     let sign = 1
     if (dividend < 0 && divisor > 0
         || dividend > 0 && divisor < 0) {
@@ -27,7 +27,6 @@ var divide = function (dividend, divisor) {
                     time: tb[top].time + tb[top].time
                 })
             }
-            continue
         } else {
             tb.pop()
         }
@@ -37,4 +36,4 @@ var divide = function (dividend, divisor) {
         return 2147483647
     }
     return result
-};
+}

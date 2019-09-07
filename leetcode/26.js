@@ -2,12 +2,12 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function (nums) {
+const removeDuplicates = function (nums) {
     let count = 0
     for (let i = 0; i < nums.length - count; i++) {
         let p = 0
         while (i + p + 1 < nums.length - count
-            && nums[i] === nums[i + p + 1]) {
+        && nums[i] === nums[i + p + 1]) {
             p++
         }
         if (p) {
@@ -18,4 +18,4 @@ var removeDuplicates = function (nums) {
         }
     }
     return nums.length - count
-};
+}

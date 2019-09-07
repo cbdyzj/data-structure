@@ -19,6 +19,6 @@ var generateParenthesis = function (n) {
         theSet[i] = curSet
     }
     return theSet[n]
-};
+}
 
 // 动态规划

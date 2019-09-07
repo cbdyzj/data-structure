@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {string}
  */
-var tb = {
+const tb = {
     'M': 1000,
     'CM': 900,
     'D': 500,
@@ -18,7 +18,7 @@ var tb = {
     'I': 1
 }
 
-var chs = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+const chs = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
 
 function cutNumber(ch, num) {
     var share = tb[ch]
@@ -31,12 +31,12 @@ function cutNumber(ch, num) {
     return { count, rest }
 }
 
-var intToRoman = function (num) {
-    var roman = []
-    var rest = num
-    for (var i = 0; i < chs.length; i++) {
-        var ch = chs[i]
-        var result = cutNumber(ch, rest)
+const intToRoman = function (num) {
+    const roman = []
+    let rest = num
+    for (let i = 0; i < chs.length; i++) {
+        const ch = chs[i]
+        const result = cutNumber(ch, rest)
         rest = result.rest
         roman.push(ch.repeat(result.count))
     }

@@ -13,7 +13,7 @@ var maxDepth = function (root) {
     if (!root) {
         return 0
     }
-    const queue = []
+    let queue = []
     queue.push(root)
     let depth = 0
     while (queue.length) {
@@ -30,11 +30,11 @@ var maxDepth = function (root) {
 
 // 迭代
 
-var maxDepth = function (root) {
+var maxDepth2 = function (root) {
     if (!root) {
         return 0
     }
-    return 1 + Math.max(maxDepth(root.left), maxDepth(root.right))
+    return 1 + Math.max(maxDepth2(root.left), maxDepth2(root.right))
 }
 
 // 递归方法
