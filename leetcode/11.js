@@ -2,10 +2,11 @@
  * @param {number[]} height
  * @return {number}
  */
-var maxArea = function (height) {
-    var maxArea = 0
-    for (var i = 0, j = height.length - 1; i < j;) {
-        var area = (j - i) * (height[i] > height[j] ? height[j] : height[i])
+const maxArea = function (height) {
+    let maxArea = 0
+    let i = 0, j = height.length - 1
+    while (i < j) {
+        const area = (j - i) * (height[i] > height[j] ? height[j] : height[i])
         if (area > maxArea) {
             maxArea = area
         }
@@ -16,6 +17,6 @@ var maxArea = function (height) {
         }
     }
     return maxArea
-};
+}
 
 // 双指针

@@ -2,13 +2,13 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function (s) {
+const lengthOfLongestSubstring = function (s) {
     if (!s) {
         return 0
     }
-    var len = 1
-    var tmp = [s[0]]
-    for (var i = 1; i < s.length; i++) {
+    let len = 1
+    const tmp = [s[0]]
+    for (let i = 1; i < s.length; i++) {
         while (tmp.includes(s[i])) {
             tmp.shift()
         }
@@ -18,4 +18,4 @@ var lengthOfLongestSubstring = function (s) {
         }
     }
     return len
-};
+}

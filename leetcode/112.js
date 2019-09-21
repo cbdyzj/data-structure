@@ -27,6 +27,6 @@ function childSum(node, acc, sum) {
  * @param {number} sum
  * @return {boolean}
  */
-var hasPathSum = function (root, sum) {
+const hasPathSum = function (root, sum) {
     return childSum(root, 0, sum)
-};
+}

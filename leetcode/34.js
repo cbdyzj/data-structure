@@ -3,8 +3,9 @@
  * @param {number} target
  * @return {number[]}
  */
-var searchRange = function (nums, target) {
+const searchRange = function (nums, target) {
     const range = [-1, -1]
+
     function binarySearch(nums, start, end, target) {
         if (start === end) {
             if (nums[start] === target) {
@@ -29,6 +30,7 @@ var searchRange = function (nums, target) {
             binarySearch(nums, mid + 1, end, target)
         }
     }
+
     if (!nums.length) {
         return range
     }
@@ -40,6 +42,6 @@ var searchRange = function (nums, target) {
     }
     binarySearch(nums, 0, nums.length - 1, target)
     return range
-};
+}
 
 // 二分查找变体

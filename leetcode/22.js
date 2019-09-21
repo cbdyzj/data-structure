@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesis = function (n) {
+const generateParenthesis = function (n) {
     const theSet = [['']]
     if (n === 0) {
         return theSet[0]

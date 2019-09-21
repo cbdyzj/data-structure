@@ -13,7 +13,7 @@
 const removeNthFromEnd = function (head, n) {
     let p = head
     let target = head
-    for (var i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
         p = p.next
     }
     if (p === null) {

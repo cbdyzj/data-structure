@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrderBottom = function (root) {
+const levelOrderBottom = function (root) {
     if (!root) {
         return []
     }
@@ -19,8 +19,12 @@ var levelOrderBottom = function (root) {
     while (queue.length) {
         const tmp = []
         for (const node of queue) {
-            if (node.left) { tmp.push(node.left) }
-            if (node.right) { tmp.push(node.right) }
+            if (node.left) {
+                tmp.push(node.left)
+            }
+            if (node.right) {
+                tmp.push(node.right)
+            }
         }
         if (tmp.length) {
             result = [tmp.map(tn => tn.val), ...result]
@@ -28,4 +32,4 @@ var levelOrderBottom = function (root) {
         queue = tmp
     }
     return result
-};
+}

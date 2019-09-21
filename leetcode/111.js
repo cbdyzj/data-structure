@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var minDepth = function (root) {
+const minDepth = function (root) {
     if (!root) {
         return 0
     }
@@ -20,6 +20,6 @@ var minDepth = function (root) {
         return 1 + minDepth(root.left)
     }
     return 1 + Math.min(minDepth(root.left), minDepth(root.right))
-};
+}
 
 // 根节点到最近叶子节点的最短路径上的节点数量（有个坑）

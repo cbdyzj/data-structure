@@ -33,14 +33,14 @@ function childSum(node, acc, sum) {
     return [...leftRes, ...rightRes]
 }
 
-var pathSum = function (root, sum) {
+const pathSum = function (root, sum) {
     return childSum(root, 0, sum)
         .filter(item => item[0])
         .map(item => {
             item.shift()
             return item.reverse()
         })
-};
+}
 
 // 根据112简单改一下
 // 本质是DFS

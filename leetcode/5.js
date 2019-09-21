@@ -13,12 +13,12 @@ function min(a, b) {
     return a > b ? b : a
 }
 
-var longestPalindrome = function (s) {
+const longestPalindrome = function (s) {
     if (isPalindrome(s, 0, s.length - 1)) {
         return s
     }
-    var lp = ''
-    for (var i = 0; i < s.length * 2 - 1; i++) {
+    let lp = ''
+    for (let i = 0; i < s.length * 2 - 1; i++) {
         if (i % 2 === 0) {
             // odd
             let tm = min(i / 2, s.length - i / 2 - 1)
@@ -44,4 +44,4 @@ var longestPalindrome = function (s) {
         }
     }
     return lp
-};
+}

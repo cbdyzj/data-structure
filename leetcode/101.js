@@ -18,11 +18,12 @@ function isChildTreeSymmetric(t1, t2) {
     }
     return false
 }
+
 /**
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function (root) {
+const isSymmetric = function (root) {
     if (root === null) {
         return true
     }
@@ -33,4 +34,4 @@ var isSymmetric = function (root) {
         return isChildTreeSymmetric(root.left, root.right)
     }
     return false
-};
+}

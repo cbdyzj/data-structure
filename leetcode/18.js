@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var fourSum = function (nums, target) {
+const fourSum = function (nums, target) {
     nums = nums.sort((a, b) => a - b)
     const len = nums.length
     const resultSet = []

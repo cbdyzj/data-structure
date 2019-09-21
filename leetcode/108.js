@@ -5,7 +5,7 @@
  *     this.left = this.right = null;
  * }
  */
-var sortedArrayToBST = function (nums, start = 0, end = nums.length - 1) {
+const sortedArrayToBST = function (nums, start = 0, end = nums.length - 1) {
     if (start > end) {
         return null
     }
@@ -17,6 +17,6 @@ var sortedArrayToBST = function (nums, start = 0, end = nums.length - 1) {
     node.left = sortedArrayToBST(nums, start, mid - 1)
     node.right = sortedArrayToBST(nums, mid + 1, end)
     return node
-};
+}
 
 // 递归

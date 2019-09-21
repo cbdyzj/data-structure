@@ -64,7 +64,7 @@ function multiplyOne(num, n) {
 }
 
 
-var multiply = function (num1, num2) {
+const multiply = function (num1, num2) {
     if (num1 === '0' || num2 === '0') {
         return '0'
     }
@@ -74,4 +74,4 @@ var multiply = function (num1, num2) {
         result = add(result, multiplyOne(num2, n1) + '0'.repeat(i))
     }
     return result
-};
+}

@@ -2,7 +2,7 @@
  * @param {string} digits
  * @return {string[]}
  */
-var phoneTable = {
+const phoneTable = {
     2: ['a', 'b', 'c'],
     3: ['d', 'e', 'f'],
     4: ['g', 'h', 'i'],
@@ -13,14 +13,14 @@ var phoneTable = {
     9: ['w', 'x', 'y', 'z'],
 }
 
-var letterCombinations = function (digits) {
-    var resultSet = []
-    for (var i = 0; i < digits.length; i++) {
-        var dgtChs = phoneTable[digits[i]]
+const letterCombinations = function (digits) {
+    let resultSet = []
+    for (let i = 0; i < digits.length; i++) {
+        let dgtChs = phoneTable[digits[i]]
         if (!resultSet.length) {
             dgtChs.forEach(e => resultSet.push(e))
         } else {
-            var newResultSet = []
+            const newResultSet = []
             dgtChs.forEach(ch => newResultSet.push(...resultSet.map(e => e + ch)))
             resultSet = newResultSet
         }

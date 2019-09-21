@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var tb = {
+const tb = {
     'M': 1000,
     'CM': 900,
     'D': 500,
@@ -17,10 +17,10 @@ var tb = {
     'IV': 4,
     'I': 1
 }
-var romanToInt = function (s) {
-    var intNum = 0
-    for (var i = 0; i < s.length;) {
-        var ch = s.substring(i, i + 2)
+const romanToInt = function (s) {
+    let intNum = 0
+    for (let i = 0; i < s.length;) {
+        const ch = s.substring(i, i + 2)
         if (tb[ch]) {
             intNum += tb[ch]
             i += 2
@@ -30,4 +30,4 @@ var romanToInt = function (s) {
         }
     }
     return intNum
-};
+}

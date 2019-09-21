@@ -3,7 +3,7 @@
  * @return {number}
  */
 const cache = {}
-var climbStairs = function (n) {
+const climbStairs = function (n) {
     if (n === 1) {
         return 1
     }
@@ -14,7 +14,7 @@ var climbStairs = function (n) {
         cache[n] = climbStairs(n - 1) + climbStairs(n - 2)
     }
     return cache[n]
-};
+}
 
 // 背景：斐波那契数列
 // 到达n阶的方法有

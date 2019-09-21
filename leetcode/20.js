@@ -8,7 +8,7 @@ var brackets = {
     ']': '[',
     '}': '{'
 }
-var isValid = function (s) {
+const isValid = function (s) {
     const stack = []
     for (const ch of s) {
         switch (ch) {

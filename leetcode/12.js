@@ -21,9 +21,9 @@ const tb = {
 const chs = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
 
 function cutNumber(ch, num) {
-    var share = tb[ch]
-    var count = 0
-    var rest = num
+    const share = tb[ch]
+    let count = 0
+    let rest = num
     while (rest >= share) {
         rest -= share
         count++
@@ -41,4 +41,4 @@ const intToRoman = function (num) {
         roman.push(ch.repeat(result.count))
     }
     return roman.join('')
-};
+}

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxSubArray = function (nums) {
+const maxSubArray = function (nums) {
     let result = nums[0]
     let sum = 0
     for (let i = 0; i < nums.length; i++) {
@@ -14,7 +14,7 @@ var maxSubArray = function (nums) {
         result = Math.max(sum, result)
     }
     return result
-};
+}
 
 // 题目背景
 // Kadane's algorithm

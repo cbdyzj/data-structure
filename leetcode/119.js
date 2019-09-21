@@ -2,7 +2,7 @@
  * @param {number} rowIndex
  * @return {number[]}
  */
-var getRow = function(rowIndex) {
+const getRow = function (rowIndex) {
     if (rowIndex === 0) {
         return [1]
     }
@@ -13,4 +13,4 @@ var getRow = function(rowIndex) {
     }
     next.push(lastLine[lastLine.length - 1])
     return next
-};
+}

@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string}
  */
-var countAndSay = function (n) {
+const countAndSay = function (n) {
     if (n === 1) {
         return '1'
     }
@@ -23,6 +23,6 @@ var countAndSay = function (n) {
     say += count
     say += p
     return say
-};
+}
 
 // 递归

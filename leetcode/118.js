@@ -2,7 +2,7 @@
  * @param {number} numRows
  * @return {number[][]}
  */
-var generate = function (numRows) {
+const generate = function (numRows) {
     if (!numRows) {
         return []
     }
@@ -18,4 +18,4 @@ var generate = function (numRows) {
     next.push(lastLine[lastLine.length - 1])
     lastResultSet.push(next)
     return lastResultSet
-};
+}

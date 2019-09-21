@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function (head) {
+const deleteDuplicates = function (head) {
     if (!head) {
         return null
     }
@@ -19,6 +19,6 @@ var deleteDuplicates = function (head) {
     }
     head.next = deleteDuplicates(p)
     return head
-};
+}
 
 // 递归

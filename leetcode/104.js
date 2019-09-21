@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var maxDepth = function (root) {
+const maxDepth = function (root) {
     if (!root) {
         return 0
     }
@@ -19,18 +19,22 @@ var maxDepth = function (root) {
     while (queue.length) {
         const tmp = []
         for (const node of queue) {
-            if (node.left) { tmp.push(node.left) }
-            if (node.right) { tmp.push(node.right) }
+            if (node.left) {
+                tmp.push(node.left)
+            }
+            if (node.right) {
+                tmp.push(node.right)
+            }
         }
         depth++
         queue = tmp
     }
     return depth
-};
+}
 
 // 迭代
 
-var maxDepth2 = function (root) {
+const maxDepth2 = function (root) {
     if (!root) {
         return 0
     }
