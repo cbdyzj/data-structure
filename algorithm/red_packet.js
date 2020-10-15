@@ -4,7 +4,7 @@
  * @param money 钱
  * @param share 份数
  */
-function distributeRedPacket(money: number, share: number): string[] {
+function distributeRedPacket(money, share) {
     if (!Number.isInteger(share) || share <= 0) {
         throw new Error('Illegal share')
     }

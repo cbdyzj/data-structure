@@ -1,4 +1,4 @@
-function partition(array: number[], low: number, high: number) {
+function partition(array, low, high) {
     const pivot = array[low]
     while (low < high) {
         while (pivot <= array[high] && low < high) {
@@ -18,7 +18,7 @@ function partition(array: number[], low: number, high: number) {
     return low
 }
 
-export function quickSort(array: number[], low: number = 0, high: number = array.length - 1) {
+ function quickSort(array, low = 0, high = array.length - 1) {
     if (low < high) {
         const pos = partition(array, low, high)
         quickSort(array, low, pos - 1)

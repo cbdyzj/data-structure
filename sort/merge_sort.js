@@ -1,5 +1,5 @@
-function merge(a: number[], b: number[]) {
-    const c: number[] = []
+function merge(a, b) {
+    const c = []
     while (a.length && b.length) {
         if (a[0] <= b[0]) {
             c.push(a.shift())
@@ -11,7 +11,7 @@ function merge(a: number[], b: number[]) {
     return c
 }
 
-export function mergeSort(array: number[]) {
+function mergeSort(array) {
     if (array.length === 1) {
         return array
     }

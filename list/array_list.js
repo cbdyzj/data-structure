@@ -1,20 +1,22 @@
-export class ArrayList<T> {
+class ArrayList {
 
-    container: T[] = []
+    constructor() {
+        container = []
+    }
 
-    add(data: T) {
+    add(data) {
         this.container.push(data)
     }
 
-    remove(data: T) {
+    remove(data) {
         this.container = this.container.filter(c => c !== data)
     }
 
-    set(index: number, data: T) {
+    set(index, data) {
         this.container[index] = data
     }
 
-    get(index: number) {
+    get(index) {
         return this.container[index]
     }
 

@@ -1,9 +1,7 @@
 /**
- * Low to high
- * 
- * @param arr Array to sort
+ * 每次从未排序的数组中选择最小的放到已排序的数组末尾
  */
-function insertionSort(arr: number[]) {
+function selectionSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
         let low = i
         for (let j = i + 1; j < arr.length; j++) {

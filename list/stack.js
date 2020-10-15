@@ -1,8 +1,10 @@
-export class Stack<T> {
+class Stack {
 
-    container: T[] = []
+    constructor() {
+        this.container = []
+    }
 
-    push(data: T) {
+    push(data) {
         this.container.push(data)
     }
 

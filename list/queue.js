@@ -1,8 +1,10 @@
-export class Queue<T> {
+class Queue {
 
-    container: T[] = []
+    constructor() {
+        this.container = []
+    }
 
-    enqueue(data: T) {
+    enqueue(data) {
         this.container.push(data)
     }
 

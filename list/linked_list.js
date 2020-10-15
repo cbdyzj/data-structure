@@ -1,14 +1,11 @@
-export interface ListNode<T> {
-    next?: ListNode<T>
-    data?: T
-}
+class LinkedList {
 
-export class LinkedList<T> {
+    constructor() {
+        head = {}
+    }
 
-    head: ListNode<T> = {}
-
-    add(data: T) {
-        const node: ListNode<T> = { data }
+    add(data) {
+        const node = { data }
         if (!this.head.next) {
             this.head.next = node
         } else {
@@ -17,7 +14,7 @@ export class LinkedList<T> {
         }
     }
 
-    remove(data: T) {
+    remove(data) {
         let pointer = this.head
         while (pointer.next) {
             if (pointer.next.data === data) {
