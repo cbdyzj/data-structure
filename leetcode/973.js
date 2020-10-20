@@ -10,19 +10,15 @@ function kClosest(points, K) {
     }
 
     const kHeap = []
-    let kMaxVal = 0
 
     for (let i = 0; i < K; i++) {
         const point = points[i]
         const val = d(point)
         kHeap.push({ val, point })
-        if (kMaxVal < val) {
-            kMaxVal = val
-        }
     }
     kHeap.sort((a, b) => a.val - b.val)
 
-    // 可以用大顶堆优化
+    // 可以用二分查找优化？
     function add(point) {
         const val = d(point)
         // 替换元素
