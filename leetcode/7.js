@@ -1,11 +1,11 @@
-/**
- * @param {number} x
- * @return {number}
- */
 function isOverflow(x) {
     return x > 2147483646 || x < -2147483647
 }
 
+/**
+ * @param {number} x
+ * @return {number}
+ */
 const reverse = function (x) {
     if (isOverflow(x)) {
         return 0

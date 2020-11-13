@@ -26,7 +26,7 @@ function mergeSet(oldOne, newOne) {
     }
 }
 
-var combinationSum2 = function (candidates, target) {
+const combinationSum2 = function (candidates, target) {
     const resultSet = []
     for (let i = 0; i < candidates.length; i++) {
         if (target > candidates[i]) {

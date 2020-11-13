@@ -14,3 +14,4 @@ const mySqrt = function (x) {
 
 
 // 牛顿法
+// f(x) = f(x0) + f'(x0)(x - x0)

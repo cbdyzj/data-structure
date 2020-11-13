@@ -26,7 +26,6 @@ function gardenNoAdj(n, paths) {
         }
         // Look back
         else if (!ga) {
-
             const top = answer.pop()
             if (top < 4) {
                 answer.push(top + 1)

@@ -13,7 +13,7 @@ function add(a, b, c) {
  * @param {string} b
  * @return {string}
  */
-var addBinary = function (a, b) {
+const addBinary = function (a, b) {
     const len = Math.min(a.length, b.length)
     let carry = '0'
     let result = ''
@@ -36,4 +36,4 @@ var addBinary = function (a, b) {
         result = carry + result
     }
     return result
-};
+}

@@ -1,4 +1,3 @@
-
 function isSameArray(a, b) {
     if (a.length !== b.length) {
         return false
@@ -26,7 +25,7 @@ function mergeSet(oldOne, newOne) {
     }
 }
 
-var combinationSum = function (candidates, target) {
+const combinationSum = function (candidates, target) {
     const resultSet = []
     for (let i = 0; i < candidates.length; i++) {
         if (target > candidates[i]) {
