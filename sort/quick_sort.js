@@ -1,27 +1,15 @@
-function partition(array, low, high) {
-    const pivot = array[low]
-    while (low < high) {
-        while (pivot <= array[high] && low < high) {
-            high--
-        }
-        if (low < high) {
-            array[low] = array[high]
-        }
-        while (pivot >= array[low] && low < high) {
-            low++
-        }
-        if (low < high) {
-            array[high] = array[low]
-        }
+/**
+ * @param {number[]} arr
+ * @returns {number[]}
+ */
+function quickSort(arr) {
+    if (arr.length <= 1) {
+        return arr
     }
-    array[low] = pivot
-    return low
-}
-
- function quickSort(array, low = 0, high = array.length - 1) {
-    if (low < high) {
-        const pos = partition(array, low, high)
-        quickSort(array, low, pos - 1)
-        quickSort(array, pos + 1, high)
-    }
+    const pivotIndex = arr.length >> 1
+    const pivot = arr.splice(pivotIndex, 1)[0]
+    const left = []
+    const right = []
+    arr.forEach(it => it <= pivot ? left.push(it) : right.push(it))
+    return [...quickSort(left), pivot, ...quickSort(right)]
 }

@@ -9,7 +9,7 @@ function selectionSort(arr) {
                 low = j
             }
         }
-        if (low != i) {
+        if (low !== i) {
             let tmp = arr[low]
             for (let k = low; k > i; k--) {
                 arr[k] = arr[k - 1]

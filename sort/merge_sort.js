@@ -1,22 +1,22 @@
-function merge(a, b) {
-    const c = []
-    while (a.length && b.length) {
-        if (a[0] <= b[0]) {
-            c.push(a.shift())
+function merge(left, right) {
+    const merged = []
+    while (left.length && right.length) {
+        if (left[0] <= right[0]) {
+            merged.push(left.shift())
         } else {
-            c.push(b.shift())
+            merged.push(right.shift())
         }
     }
-    c.push(...a, ...b)
-    return c
+    return [...merged, ...left, ...right]
 }
 
-function mergeSort(array) {
-    if (array.length === 1) {
-        return array
+function mergeSort(arr) {
+    if (arr.length === 1) {
+        return arr
     }
-    const mid = Math.trunc(array.length / 2)
-    const a = mergeSort(array.slice(0, mid))
-    const b = mergeSort(array.slice(mid, array.length))
-    return merge(a, b)
+    const mid = arr.length >> 1
+    const left = mergeSort(arr.slice(0, mid))
+    const right = mergeSort(arr.slice(mid, arr.length))
+    return merge(left, right)
 }
+
