@@ -3,7 +3,7 @@
  *
  * @param {string} s
  */
-function eval(s) {
+function eval4(s) {
     const expr = []
     const opStack = []
     let numStr = ''

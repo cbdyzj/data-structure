@@ -1,5 +1,5 @@
 // 广度优先遍历
-function breadthFirstSearch(start: { data: {}, adjacent: [] }, fn = node => { }) {
+function breadthFirstSearch(start= { data: {}, adjacent: [] }, fn = node => { }) {
     const queue = []
     const visited = new Map
     queue.push(start)
@@ -14,7 +14,7 @@ function breadthFirstSearch(start: { data: {}, adjacent: [] }, fn = node => { })
 }
 
 // 深度优先遍历
-function DepthFirstSearch(start: { data: {}, adjacent: [] }, fn = node => { }) {
+function DepthFirstSearch(start= { data: {}, adjacent: [] }, fn = node => { }) {
     const stack = []
     const visited = new Map
     stack.push(start)

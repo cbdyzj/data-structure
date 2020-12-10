@@ -1,7 +1,7 @@
 class LinkedList {
 
     constructor() {
-        head = {}
+        this.head = {}
     }
 
     add(data) {

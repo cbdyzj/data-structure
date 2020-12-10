@@ -1,7 +1,7 @@
 class ArrayList {
 
     constructor() {
-        container = []
+        this.container = []
     }
 
     add(data) {
